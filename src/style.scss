@@ -239,6 +239,7 @@
                 .message{
                     display: flex;
                     gap: 20px;
+                    margin-bottom: 20px;
 
                     .messageInfo{
                         display: flex;
@@ -258,17 +259,17 @@
                         max-width: 80%;
                         display: flex;
                         flex-direction: column;
-                        gap: 10px;
                         
                         p{
                             background-color: white;
                             padding: 10px 20px;
-                            border-radius: 0px 10px 10px;
+                            border-radius: 5px;
                             max-width: max-content;
                         }
 
                         img{
                             width: 50%;
+                            border-radius: 5px;
                         }
                     }
                     &.owner{
@@ -280,7 +281,7 @@
                             p{
                                 background-color: #2b3137;
                                 color: white;
-                                border-radius: 10px 0px 10px 10px;
+                                border-radius: 5px;
                             }
                         }
 
