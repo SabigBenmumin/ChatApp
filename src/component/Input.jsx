@@ -13,6 +13,7 @@ import {
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import { BiImage } from "react-icons/bi";
 
 const Input = () => {
   const [text, setText] = useState("");
@@ -82,7 +83,8 @@ const Input = () => {
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
+        {/* <img src={Attach} alt="" /> */}
+
         <input
           type="file"
           style={{ display: "none" }}
@@ -90,7 +92,8 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src={Img} alt="" />
+          {/* <img src={Img} alt="" /> */}
+          <BiImage className="image"/>
         </label>
         <button onClick={handleSend}>Send</button>
       </div>

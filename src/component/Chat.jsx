@@ -5,14 +5,23 @@ import More from '../img/more.png'
 import Messages from './Messages'
 import Input from './Input'
 import { ChatContext } from '../context/ChatContext'
+import { BiLeftArrowAlt } from "react-icons/bi";
 
 const Chat = () => {
   const { data } = useContext(ChatContext);
 
+  const handleClick = () => {
+    window.location.reload()
+  }
+
   return (
     <div className='chat'>
       <div className="chatInfo">
-        <span>{data.user?.displayName}</span>
+        <BiLeftArrowAlt className='backArrow' onClick={() => handleClick()}/>
+        <div className='interlocutor'>
+          <img src={data.user?.photoURL} alt='' />
+          <span>{data.user?.displayName}</span>
+        </div>
         {/*
         <div className="chatIcons">
           <img src={Cam} alt="" />
