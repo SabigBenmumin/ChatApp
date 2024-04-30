@@ -17,7 +17,7 @@ const Chat = () => {
   return (
     <div className='chat'>
       <div className="chatInfo">
-        <BiLeftArrowAlt onClick={() => handleClick()}/>
+        <BiLeftArrowAlt className='backArrow' onClick={() => handleClick()}/>
         <div className='interlocutor'>
           <img src={data.user?.photoURL} alt='' />
           <span>{data.user?.displayName}</span>

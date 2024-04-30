@@ -219,6 +219,12 @@
         padding: 10px;
         color: lightgray;
 
+        .backArrow{
+          height: 50px;
+          width: 50px;
+          cursor: pointer;
+        }
+
         .interlocutor {
           padding: 10px;
           display: flex;
@@ -339,6 +345,11 @@
             height: 24px;
             cursor: pointer;
           }
+          .image{
+            height: 35px;
+            width: 35px;
+            cursor: pointer;
+          }
 
           button {
             border: none;
@@ -346,6 +357,7 @@
             color: white;
             background-color: #2b3137;
             border-radius: 10px;
+            cursor: pointer;
           }
         }
       }
